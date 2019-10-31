@@ -2,7 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import router from '@/routen'
+import router from '@/router'
+import axios from '@/api'
+Vue.prototype.$http = axios
 Vue.config.productionTip = false
 // Element是个插件，包含了很多组件
 Vue.use(Element)
